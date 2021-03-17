@@ -8,6 +8,8 @@ body {
   padding-top: 80px;
 }
 
+/* OBJETOS CSS */
+/* PROPRIEDADES */
 #scroll-animate {
   overflow: hidden;
 }
@@ -42,6 +44,7 @@ body {
   text-align: center;
   list-style: none;
   z-index: 10001;
+  background-color: black;
 }
 
 .header-menu li {
@@ -92,7 +95,7 @@ footer h1 {
 
 .content {
   background-color: black;
-  height: 1200px;
+  height: 1400px;
   min-height: 1000px;
   position: relative;
   z-index: 1;
