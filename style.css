@@ -4,12 +4,32 @@
   src: url("/fonts/GoodHood.otf");
 }
 body {
-  font-family: "Roboto Slab", serif;
-  padding-top: 80px;
+  background-color: #263238;
+  color: #f8e5e5;
+  font-family: Roboto Slab;
 }
 
-/* OBJETOS CSS */
-/* PROPRIEDADES */
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  z-index: 10;
+  background-color: black;
+}
+.menu li {
+  margin: 2px 34px;
+  display: inline-block;
+  color: white;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
 #scroll-animate {
   overflow: hidden;
 }
@@ -36,66 +56,42 @@ body {
   right: 0;
 }
 
-.header-menu {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  border-bottom: solid white 1px;
-  text-align: center;
-  list-style: none;
-  z-index: 10001;
-  background-color: black;
-}
-
-.header-menu li {
-  margin: 2px 34px;
-  display: inline-block;
-  color: white;
-}
-
-.header-menu a {
-  text-decoration: none;
-  color: white;
-}
-
 header {
   width: 100%;
   height: 100%;
-  background: black;
+  background: url(https://thumbs.gfycat.com/CandidHappyBlackbuck-size_restricted.gif);
+  background-size: cover;
   top: 0;
   position: fixed;
   z-index: -1;
 }
 
-.first-content {
-  background-image: url(https://i2.wp.com/yodobi.com/4k-Wallpapers/animated-mobile-phone-gif-wallpaper-phone-Is-4K-Wallpaper.gif);
-  background-size: cover;
+.main {
+  text-align: center;
+  font-family: GoodHood;
 }
-
-.first-content h1 {
-  font-size: 100px;
-  line-height: 300px;
+.main h1 {
+  font-size: 150px;
+  word-spacing: -40px;
 }
-
-.first-content-subtitle h1 {
-  font-size: 50px;
+.main h2 {
+  color: white;
+  font-size: 80px;
 }
 
 footer {
   width: 100%;
   height: 300px;
-  background: white;
+  background: gray;
   bottom: -300px;
   position: fixed;
   z-index: -1;
 }
-footer h1 {
-  color: black;
-}
 
 .content {
+  color: white;
   background-color: black;
-  height: 1400px;
+  height: 1000px;
   min-height: 1000px;
   position: relative;
   z-index: 1;
@@ -104,23 +100,7 @@ footer h1 {
 .wrapper-parallax {
   margin-top: 100%;
   margin-bottom: 300px;
-  box-shadow: 0px 0px 20px black;
-}
-
-h1 {
-  width: 100%;
-  padding: 0;
-  text-align: center;
-  font-size: 90px;
-  color: white;
-}
-
-.content h1 {
-  line-height: 1000px;
-}
-
-footer h1 {
-  line-height: 300px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 header,
@@ -136,7 +116,5 @@ footer,
   -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
   transition-timing-function: cubic-bezier(0, 0, 0, 1);
 }
-
-/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
