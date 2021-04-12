@@ -96,16 +96,40 @@ footer {
     bottom: -300px;
     position: fixed;
     z-index: -1;
+    background-color: blueviolet;
+    text-align: center;
+    h1{
+        margin: 66px;
+    }
 }
+
+.tag {
+    margin-top:150px;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+  }
+  
+  @keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+  }
 
 .content {
     color: white;
     background-color: black;
     height: 1000px;
     min-height: 1000px;
-
+    text-align: center;
     position: relative;
     z-index: 1;
+ 
 }
 
 .wrapper-parallax {
