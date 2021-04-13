@@ -92,19 +92,17 @@ header {
 footer {
     width: 100%;
     height: 300px;
-    background: gray;
     bottom: -300px;
     position: fixed;
     z-index: -1;
     background-color: blueviolet;
     text-align: center;
     h1{
-        margin: 66px;
+        margin: 20px;
     }
 }
 
 .tag {
-    margin-top:150px;
     font-size: 20px;
     color: white;
     text-transform: uppercase;
@@ -123,13 +121,44 @@ footer {
 
 .content {
     color: white;
-    background-color: black;
+    background-color:black;
+    border-top: white solid 1px;
+    border-bottom: white solid 1px;
     height: 1000px;
     min-height: 1000px;
     text-align: center;
     position: relative;
     z-index: 1;
+   h1 {
+        font-family: GoodHood;
+        font-size: 100px;
+        margin: 10px;
+    }
+    h2{
+        width: 94%;
+        margin: 20px;
+        text-align: right;
+    }
+    img, h2{
+        display: inline-block;
+    }
  
+}
+
+img {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+
+    transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+    padding: 10px;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+img:last-of-type {
+    transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
 }
 
 .wrapper-parallax {
@@ -152,4 +181,15 @@ footer,
     -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
     -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
     transition-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+
+
+//ICONES SOCIAL MEDIA
+svg {
+    width: 120px;
+    fill:white;
+}
+
+svg:hover {
+    fill: black;
 }
